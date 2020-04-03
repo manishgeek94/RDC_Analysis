@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RDC</title>
+</head>
+
+<body>
+
+
+{% if create_img %}
+<div class = 'CreatedRecords'>
+    <h4>Number of created Record Per day</h4>
+
+  <img src= 'static/images/createR.png' alt="Chart" height="500" width="500">
+</div>
+<a href="/cov_effective"><button type="button" class="btn btn-success">About Coverage</button></a>
+{% else %}
+<div class = 'Coverage'>
+    <h4>Number of created Coverage Record Per day</h4>
+ <img src= 'static/images/CoverageEffective.png' alt="Chart" height="500" width="500">
+</div>
+<a href="/erdate"><button type="button" class="btn btn-primary btn-sm">About RDC CreateData</button></a>
+<br>
+<br>
+
+<a href="/idm"><button type="button" class="btn btn-secondary btn-sm">Click Here to See IDM Data</button></a>
+
+{% endif %}
+</body>
+</html>
